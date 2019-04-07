@@ -14,5 +14,10 @@ public interface UserService {
      * @return 用户对象
      */
     User findUserInfo();
-    
+
+    /**
+     * 获取缓存中的测试用户
+     * @return
+     */
+    User getCachedUserInfo();
 }

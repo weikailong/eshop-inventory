@@ -24,4 +24,11 @@ public class UserController {
         return user;
     }
     
+    @RequestMapping("/getCachedUserInfo")
+    @ResponseBody
+    public User getCachedUserInfo(){
+        User user = userService.getCachedUserInfo();
+        return user;
+    }
+    
 }
